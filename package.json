@@ -1,6 +1,6 @@
 {
   "name": "@mothepro/emojis",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A list of emojis and their descriptions",
   "repository": "https://github.com/mothepro/emojis",
   "author": "Maurice Prosper",
@@ -9,7 +9,9 @@
   "main": "dist/npm/index.js",
   "module": "dist/npm/index.js",
   "sideEffects": false,
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "public"
   },
