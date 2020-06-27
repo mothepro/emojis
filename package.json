@@ -7,7 +7,7 @@
   "license": "Apache-2.0",
   "type": "module",
   "main": "dist/npm/index.js",
-  "module": "dist/npm/index.js",
+  "module": "dist/esm/index.js",
   "sideEffects": false,
   "files": [
     "dist"
@@ -19,6 +19,8 @@
     "typescript": "^3.9.5"
   },
   "scripts": {
-    "build": "tsc"
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:npm": "tsc",
+    "build": "npm run build:npm && npm run build:esm"
   }
 }
