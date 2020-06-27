@@ -6,8 +6,8 @@
   "author": "Maurice Prosper",
   "license": "Apache-2.0",
   "type": "module",
-  "main": "index.json",
-  "module": "index.json",
+  "main": "index.js",
+  "module": "index.js",
   "sideEffects": false,
   "publishConfig": {
     "access": "public"
