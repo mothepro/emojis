@@ -6,13 +6,17 @@
   "author": "Maurice Prosper",
   "license": "Apache-2.0",
   "type": "module",
-  "main": "index.js",
-  "module": "index.js",
+  "main": "dist/npm/index.js",
+  "module": "dist/npm/index.js",
   "sideEffects": false,
+  "files": ["dist"],
   "publishConfig": {
     "access": "public"
   },
   "devDependencies": {
     "typescript": "^3.9.5"
+  },
+  "scripts": {
+    "build": "tsc"
   }
 }
