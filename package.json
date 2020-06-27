@@ -1,0 +1,15 @@
+{
+  "name": "@mothepro/emojis",
+  "version": "1.0.0",
+  "description": "A list of emojis and their descriptions",
+  "repository": "https://github.com/mothepro/emojis",
+  "author": "Maurice Prosper",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "index.json",
+  "module": "index.json",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}
