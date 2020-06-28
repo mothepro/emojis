@@ -6,8 +6,8 @@
   "author": "Maurice Prosper",
   "license": "Apache-2.0",
   "type": "module",
-  "main": "dist/npm/index.js",
-  "module": "dist/esm/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "sideEffects": false,
   "files": [
     "dist"
@@ -19,8 +19,6 @@
     "typescript": "^3.9.5"
   },
   "scripts": {
-    "build:esm": "tsc -p tsconfig.esm.json",
-    "build:npm": "tsc",
-    "build": "npm run build:npm && npm run build:esm"
+    "build": "tsc"
   }
 }
