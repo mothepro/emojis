@@ -8,10 +8,12 @@ export function* randomPairs() {
   for (let i = emojis.length - 1; i > 0; i--) {
     const j = Math.trunc(Math.random() * i);
     [emojis[j], emojis[i]] = [emojis[i], emojis[j]]
+    
+    yield {
+      emoji: emojis[i],
+      description: allEmojis[emojis[i]]
+    }
   }
-
-  for (const emoji of emojis)
-    yield { emoji, description: allEmojis[emoji] }
 }
 
 /** Yields all emojis and their descriptions as a string in random order. */
