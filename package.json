@@ -19,6 +19,7 @@
     "typescript": "^3.9.5"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   }
 }
