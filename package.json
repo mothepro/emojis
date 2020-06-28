@@ -5,9 +5,8 @@
   "repository": "https://github.com/mothepro/emojis",
   "author": "Maurice Prosper",
   "license": "Apache-2.0",
-  "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "dist/npm/index.js",
+  "module": "dist/esm/index.js",
   "sideEffects": false,
   "files": [
     "dist"
@@ -19,7 +18,9 @@
     "typescript": "^3.9.5"
   },
   "scripts": {
-    "build": "tsc",
+    "build:npm": "tsc",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build": "npm run build:npm & npm run build:esm",
     "prepublishOnly": "npm run build"
   }
 }
